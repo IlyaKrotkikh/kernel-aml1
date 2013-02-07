@@ -1,0 +1,13 @@
+#
+# Deinterlace driver configuration
+#
+
+menu "AMLOGIC Deinterlace driver"
+
+config DEINTERLACE
+    tristate "DEINTERLACE driver"
+    depends on !MESON_SAVE_MEM
+    default n
+	help
+	  Select to enable AMLOGIC DEINTERLACE driver.
+endmenu
